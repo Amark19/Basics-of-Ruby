@@ -80,3 +80,22 @@ def hello (name,roll_no)
     puts "hello my name is #{name} and my roll no is #{roll_no}"
 end
 hello("amar",23)
+
+##classes
+
+class Student
+    @name
+    @roll_no
+    @std  #this is how we declared variables in classes
+    def initialize(name,rollno,std)##constructor
+        @name = name
+        @roll_no = rollno
+        @std = std
+    end
+    def getinfo()
+        puts "student name is #{@name}\nRoll No is #{@roll_no}\nStudying in #{@std} std"
+    end
+end
+ 
+inst = Student.new("amar",95,8)
+inst.getinfo()
