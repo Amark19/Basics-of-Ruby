@@ -96,6 +96,7 @@ class Student
         puts "student name is #{@name}\nRoll No is #{@roll_no}\nStudying in #{@std} std"
     end
 end
+
  
 inst = Student.new("amar",95,8)
 inst.getinfo()
